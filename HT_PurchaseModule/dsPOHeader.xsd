@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsPOHeader" targetNamespace="http://tempuri.org/dsPOHeader.xsd" xmlns:mstns="http://tempuri.org/dsPOHeader.xsd" xmlns="http://tempuri.org/dsPOHeader.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection ConnectionStringObject="Data Source=ss1756;Initial Catalog=HotTrak;Integrated Security=True" IsAppSettingsProperty="false" Modifier="Assembly" Name="ss1756.HotTrak.dbo" ParameterPrefix="@" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsPOHeader" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsPOHeader" msprop:Generator_DataSetName="dsPOHeader" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="POheader" msprop:Generator_UserTableName="POheader" msprop:Generator_RowDeletedName="POheaderRowDeleted" msprop:Generator_RowChangedName="POheaderRowChanged" msprop:Generator_RowClassName="POheaderRow" msprop:Generator_RowChangingName="POheaderRowChanging" msprop:Generator_RowEvArgName="POheaderRowChangeEvent" msprop:Generator_RowEvHandlerName="POheaderRowChangeEventHandler" msprop:Generator_TableClassName="POheaderDataTable" msprop:Generator_TableVarName="tablePOheader" msprop:Generator_RowDeletingName="POheaderRowDeleting" msprop:Generator_TablePropName="POheader">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PONO" msprop:Generator_UserColumnName="PONO" msprop:Generator_ColumnVarNameInTable="columnPONO" msprop:Generator_ColumnPropNameInRow="PONO" msprop:Generator_ColumnPropNameInTable="PONOColumn" type="xs:int" />
+              <xs:element name="VendorUID" msprop:Generator_UserColumnName="VendorUID" msprop:Generator_ColumnVarNameInTable="columnVendorUID" msprop:Generator_ColumnPropNameInRow="VendorUID" msprop:Generator_ColumnPropNameInTable="VendorUIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="PODate" msprop:Generator_UserColumnName="PODate" msprop:Generator_ColumnVarNameInTable="columnPODate" msprop:Generator_ColumnPropNameInRow="PODate" msprop:Generator_ColumnPropNameInTable="PODateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="BornOn" msprop:Generator_UserColumnName="BornOn" msprop:Generator_ColumnVarNameInTable="columnBornOn" msprop:Generator_ColumnPropNameInRow="BornOn" msprop:Generator_ColumnPropNameInTable="BornOnColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="UserUID" msprop:Generator_UserColumnName="UserUID" msprop:Generator_ColumnVarNameInTable="columnUserUID" msprop:Generator_ColumnPropNameInRow="UserUID" msprop:Generator_ColumnPropNameInTable="UserUIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="POStatus" msprop:Generator_UserColumnName="POStatus" msprop:Generator_ColumnVarNameInTable="columnPOStatus" msprop:Generator_ColumnPropNameInRow="POStatus" msprop:Generator_ColumnPropNameInTable="POStatusColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EstDeliveryDate" msprop:Generator_UserColumnName="EstDeliveryDate" msprop:Generator_ColumnVarNameInTable="columnEstDeliveryDate" msprop:Generator_ColumnPropNameInRow="EstDeliveryDate" msprop:Generator_ColumnPropNameInTable="EstDeliveryDateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ActDeliveryDte" msprop:Generator_UserColumnName="ActDeliveryDte" msprop:Generator_ColumnVarNameInTable="columnActDeliveryDte" msprop:Generator_ColumnPropNameInRow="ActDeliveryDte" msprop:Generator_ColumnPropNameInTable="ActDeliveryDteColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="NetTermsUID" msprop:Generator_UserColumnName="NetTermsUID" msprop:Generator_ColumnVarNameInTable="columnNetTermsUID" msprop:Generator_ColumnPropNameInRow="NetTermsUID" msprop:Generator_ColumnPropNameInTable="NetTermsUIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="ShipTermsUID" msprop:Generator_UserColumnName="ShipTermsUID" msprop:Generator_ColumnVarNameInTable="columnShipTermsUID" msprop:Generator_ColumnPropNameInRow="ShipTermsUID" msprop:Generator_ColumnPropNameInTable="ShipTermsUIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="DeliveryUID" msprop:Generator_UserColumnName="DeliveryUID" msprop:Generator_ColumnVarNameInTable="columnDeliveryUID" msprop:Generator_ColumnPropNameInRow="DeliveryUID" msprop:Generator_ColumnPropNameInTable="DeliveryUIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="DeliveryTUID" msprop:Generator_UserColumnName="DeliveryTUID" msprop:Generator_ColumnVarNameInTable="columnDeliveryTUID" msprop:Generator_ColumnPropNameInRow="DeliveryTUID" msprop:Generator_ColumnPropNameInTable="DeliveryTUIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="CurrencyUID" msprop:Generator_UserColumnName="CurrencyUID" msprop:Generator_ColumnVarNameInTable="columnCurrencyUID" msprop:Generator_ColumnPropNameInRow="CurrencyUID" msprop:Generator_ColumnPropNameInTable="CurrencyUIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="FreightAmt" msprop:Generator_UserColumnName="FreightAmt" msprop:Generator_ColumnVarNameInTable="columnFreightAmt" msprop:Generator_ColumnPropNameInRow="FreightAmt" msprop:Generator_ColumnPropNameInTable="FreightAmtColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="POheaderUID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="POheaderUID" msprop:Generator_ColumnVarNameInTable="columnPOheaderUID" msprop:Generator_ColumnPropNameInRow="POheaderUID" msprop:Generator_ColumnPropNameInTable="POheaderUIDColumn" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:POheader" />
+      <xs:field xpath="mstns:POheaderUID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

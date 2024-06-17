@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsOrderShip" targetNamespace="http://tempuri.org/dsOrderShip.xsd" xmlns:mstns="http://tempuri.org/dsOrderShip.xsd" xmlns="http://tempuri.org/dsOrderShip.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection ConnectionStringObject="Data Source=ss1756;Initial Catalog=HotTrak;Integrated Security=True" IsAppSettingsProperty="false" Modifier="Assembly" Name="ss1756.HotTrak.dbo" ParameterPrefix="@" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsOrderShip" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="dsOrderShip" msprop:Generator_UserDSName="dsOrderShip" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="OrderShip" msprop:Generator_UserTableName="OrderShip" msprop:Generator_RowDeletedName="OrderShipRowDeleted" msprop:Generator_TableClassName="OrderShipDataTable" msprop:Generator_RowChangedName="OrderShipRowChanged" msprop:Generator_RowClassName="OrderShipRow" msprop:Generator_RowChangingName="OrderShipRowChanging" msprop:Generator_RowEvArgName="OrderShipRowChangeEvent" msprop:Generator_RowEvHandlerName="OrderShipRowChangeEventHandler" msprop:Generator_TablePropName="OrderShip" msprop:Generator_TableVarName="tableOrderShip" msprop:Generator_RowDeletingName="OrderShipRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="OrderHeaderUID" msprop:Generator_UserColumnName="OrderHeaderUID" msprop:Generator_ColumnPropNameInRow="OrderHeaderUID" msprop:Generator_ColumnVarNameInTable="columnOrderHeaderUID" msprop:Generator_ColumnPropNameInTable="OrderHeaderUIDColumn" type="xs:int" />
+              <xs:element name="InventUID" msprop:Generator_UserColumnName="InventUID" msprop:Generator_ColumnPropNameInRow="InventUID" msprop:Generator_ColumnVarNameInTable="columnInventUID" msprop:Generator_ColumnPropNameInTable="InventUIDColumn" type="xs:int" />
+              <xs:element name="Qty" msprop:Generator_UserColumnName="Qty" msprop:Generator_ColumnPropNameInRow="Qty" msprop:Generator_ColumnVarNameInTable="columnQty" msprop:Generator_ColumnPropNameInTable="QtyColumn" type="xs:int" />
+              <xs:element name="BornOn" msprop:Generator_UserColumnName="BornOn" msprop:Generator_ColumnPropNameInRow="BornOn" msprop:Generator_ColumnVarNameInTable="columnBornOn" msprop:Generator_ColumnPropNameInTable="BornOnColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ShipUID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="ShipUID" msprop:Generator_ColumnPropNameInRow="ShipUID" msprop:Generator_ColumnVarNameInTable="columnShipUID" msprop:Generator_ColumnPropNameInTable="ShipUIDColumn" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:OrderShip" />
+      <xs:field xpath="mstns:ShipUID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

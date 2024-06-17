@@ -1,0 +1,102 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <StartupObject>Sub Main</StartupObject>
+    <UseWindowsForms>true</UseWindowsForms>
+    <MyType>WindowsForms</MyType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CrystalDecisions.CrystalReports.Engine" Version="1.0.0" />
+    <PackageReference Include="CrystalDecisions.ReportSource" Version="1.0.0" />
+    <PackageReference Include="CrystalDecisions.Shared" Version="1.0.0" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="5.2.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HT_Business\HT_Business.vbproj" />
+    <ProjectReference Include="..\HT_Connection\HT_Connection.vbproj" />
+    <ProjectReference Include="..\HT_Inventory\HT_Inventory.vbproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="HT_Business">
+      <HintPath>..\HT_Business\bin\Debug\net6.0-windows\HT_Business.dll</HintPath>
+    </Reference>
+    <Reference Include="HT_Connection">
+      <HintPath>..\HT_Connection\bin\Debug\net6.0\HT_Connection.dll</HintPath>
+    </Reference>
+    <Reference Include="MTGCCombobox">
+      <HintPath>..\..\..\Downloads\MTGCCombobox.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="dsOrderDetail.Designer.vb">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>dsOrderDetail.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="dsOrderHeader.Designer.vb">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>dsOrderHeader.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="dsOrderMessage.Designer.vb">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>dsOrderMessage.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="dsOrderShip.Designer.vb">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>dsOrderShip.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="My Project\Application.Designer.vb">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Update="OrderMessage.Designer.vb">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>OrderMessage.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="dsOrderDetail.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsOrderDetail.Designer.vb</LastGenOutput>
+    </None>
+    <None Update="dsOrderHeader.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsOrderHeader.Designer.vb</LastGenOutput>
+    </None>
+    <None Update="dsOrderMessage.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsOrderMessage.Designer.vb</LastGenOutput>
+    </None>
+    <None Update="dsOrderShip.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsOrderShip.Designer.vb</LastGenOutput>
+    </None>
+    <None Update="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Update="OrderMessage.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OrderMessage.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+</Project>

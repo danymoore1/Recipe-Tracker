@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsDelivery" targetNamespace="http://tempuri.org/dsDelivery.xsd" xmlns:mstns="http://tempuri.org/dsDelivery.xsd" xmlns="http://tempuri.org/dsDelivery.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection ConnectionStringObject="Data Source=ss1756;Initial Catalog=HotTrak;Integrated Security=True" IsAppSettingsProperty="false" Modifier="Assembly" Name="ss1756.HotTrak.dbo" ParameterPrefix="@" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsDelivery" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="dsDelivery" msprop:Generator_UserDSName="dsDelivery" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DeliveryMethod" msprop:Generator_UserTableName="DeliveryMethod" msprop:Generator_RowDeletedName="DeliveryMethodRowDeleted" msprop:Generator_TableClassName="DeliveryMethodDataTable" msprop:Generator_RowChangedName="DeliveryMethodRowChanged" msprop:Generator_RowClassName="DeliveryMethodRow" msprop:Generator_RowChangingName="DeliveryMethodRowChanging" msprop:Generator_RowEvArgName="DeliveryMethodRowChangeEvent" msprop:Generator_RowEvHandlerName="DeliveryMethodRowChangeEventHandler" msprop:Generator_TablePropName="DeliveryMethod" msprop:Generator_TableVarName="tableDeliveryMethod" msprop:Generator_RowDeletingName="DeliveryMethodRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DeliveryCode" msprop:Generator_UserColumnName="DeliveryCode" msprop:Generator_ColumnPropNameInRow="DeliveryCode" msprop:Generator_ColumnVarNameInTable="columnDeliveryCode" msprop:Generator_ColumnPropNameInTable="DeliveryCodeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DeliveryDesc" msprop:Generator_UserColumnName="DeliveryDesc" msprop:Generator_ColumnPropNameInRow="DeliveryDesc" msprop:Generator_ColumnVarNameInTable="columnDeliveryDesc" msprop:Generator_ColumnPropNameInTable="DeliveryDescColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DeliveryUID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="DeliveryUID" msprop:Generator_ColumnPropNameInRow="DeliveryUID" msprop:Generator_ColumnVarNameInTable="columnDeliveryUID" msprop:Generator_ColumnPropNameInTable="DeliveryUIDColumn" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DeliveryTerms" msprop:Generator_UserTableName="DeliveryTerms" msprop:Generator_RowDeletedName="DeliveryTermsRowDeleted" msprop:Generator_TableClassName="DeliveryTermsDataTable" msprop:Generator_RowChangedName="DeliveryTermsRowChanged" msprop:Generator_RowClassName="DeliveryTermsRow" msprop:Generator_RowChangingName="DeliveryTermsRowChanging" msprop:Generator_RowEvArgName="DeliveryTermsRowChangeEvent" msprop:Generator_RowEvHandlerName="DeliveryTermsRowChangeEventHandler" msprop:Generator_TablePropName="DeliveryTerms" msprop:Generator_TableVarName="tableDeliveryTerms" msprop:Generator_RowDeletingName="DeliveryTermsRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DeliveryTUID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="DeliveryTUID" msprop:Generator_ColumnPropNameInRow="DeliveryTUID" msprop:Generator_ColumnVarNameInTable="columnDeliveryTUID" msprop:Generator_ColumnPropNameInTable="DeliveryTUIDColumn" type="xs:int" />
+              <xs:element name="DeliveryTerms" msprop:Generator_UserColumnName="DeliveryTerms" msprop:Generator_ColumnPropNameInRow="DeliveryTerms" msprop:Generator_ColumnVarNameInTable="columnDeliveryTerms" msprop:Generator_ColumnPropNameInTable="DeliveryTermsColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DeliveryDesc" msprop:Generator_UserColumnName="DeliveryDesc" msprop:Generator_ColumnPropNameInRow="DeliveryDesc" msprop:Generator_ColumnVarNameInTable="columnDeliveryDesc" msprop:Generator_ColumnPropNameInTable="DeliveryDescColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:DeliveryMethod" />
+      <xs:field xpath="mstns:DeliveryUID" />
+    </xs:unique>
+    <xs:unique name="DeliveryTerms_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:DeliveryTerms" />
+      <xs:field xpath="mstns:DeliveryTUID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

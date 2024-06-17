@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RootNamespace>HT_Inventory</RootNamespace>
+    <TargetFramework>net6.0-windows</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="5.2.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HT_Business\HT_Business.vbproj" />
+    <ProjectReference Include="..\HT_Connection\HT_Connection.vbproj" />
+    <ProjectReference Include="..\HT_PurchaseModule\HT_PurchaseModule.vbproj" />
+  </ItemGroup>
+
+</Project>

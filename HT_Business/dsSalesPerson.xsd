@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsSalesPerson" targetNamespace="http://tempuri.org/dsSalesPerson.xsd" xmlns:mstns="http://tempuri.org/dsSalesPerson.xsd" xmlns="http://tempuri.org/dsSalesPerson.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection ConnectionStringObject="Data Source=ss1756;Initial Catalog=HotTrak;Integrated Security=True" IsAppSettingsProperty="false" Modifier="Assembly" Name="ss1756.HotTrak.dbo" ParameterPrefix="@" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsSalesPerson" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="dsSalesPerson" msprop:Generator_UserDSName="dsSalesPerson" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="SalesRep" msprop:Generator_UserTableName="SalesRep" msprop:Generator_RowDeletedName="SalesRepRowDeleted" msprop:Generator_TableClassName="SalesRepDataTable" msprop:Generator_RowChangedName="SalesRepRowChanged" msprop:Generator_RowClassName="SalesRepRow" msprop:Generator_RowChangingName="SalesRepRowChanging" msprop:Generator_RowEvArgName="SalesRepRowChangeEvent" msprop:Generator_RowEvHandlerName="SalesRepRowChangeEventHandler" msprop:Generator_TablePropName="SalesRep" msprop:Generator_TableVarName="tableSalesRep" msprop:Generator_RowDeletingName="SalesRepRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SalesRep" msprop:Generator_UserColumnName="SalesRep" msprop:Generator_ColumnPropNameInRow="SalesRep" msprop:Generator_ColumnVarNameInTable="columnSalesRep" msprop:Generator_ColumnPropNameInTable="SalesRepColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SalesRepName" msprop:Generator_UserColumnName="SalesRepName" msprop:Generator_ColumnPropNameInRow="SalesRepName" msprop:Generator_ColumnVarNameInTable="columnSalesRepName" msprop:Generator_ColumnPropNameInTable="SalesRepNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SalesRepCity" msprop:Generator_UserColumnName="SalesRepCity" msprop:Generator_ColumnPropNameInRow="SalesRepCity" msprop:Generator_ColumnVarNameInTable="columnSalesRepCity" msprop:Generator_ColumnPropNameInTable="SalesRepCityColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SalesRepState" msprop:Generator_UserColumnName="SalesRepState" msprop:Generator_ColumnPropNameInRow="SalesRepState" msprop:Generator_ColumnVarNameInTable="columnSalesRepState" msprop:Generator_ColumnPropNameInTable="SalesRepStateColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SalesRepPhone" msprop:Generator_UserColumnName="SalesRepPhone" msprop:Generator_ColumnPropNameInRow="SalesRepPhone" msprop:Generator_ColumnVarNameInTable="columnSalesRepPhone" msprop:Generator_ColumnPropNameInTable="SalesRepPhoneColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SalesRepUID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="SalesRepUID" msprop:Generator_ColumnPropNameInRow="SalesRepUID" msprop:Generator_ColumnVarNameInTable="columnSalesRepUID" msprop:Generator_ColumnPropNameInTable="SalesRepUIDColumn" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:SalesRep" />
+      <xs:field xpath="mstns:SalesRepUID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

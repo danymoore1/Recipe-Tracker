@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsUOM" targetNamespace="http://tempuri.org/dsUOM.xsd" xmlns:mstns="http://tempuri.org/dsUOM.xsd" xmlns="http://tempuri.org/dsUOM.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection ConnectionStringObject="Data Source=ss1756;Initial Catalog=HotTrak;Integrated Security=True" IsAppSettingsProperty="false" Modifier="Assembly" Name="ss1756.HotTrak.dbo" ParameterPrefix="@" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsUOM" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="dsUOM" msprop:Generator_UserDSName="dsUOM" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="UOM" msprop:Generator_UserTableName="UOM" msprop:Generator_RowDeletedName="UOMRowDeleted" msprop:Generator_TableClassName="UOMDataTable" msprop:Generator_RowChangedName="UOMRowChanged" msprop:Generator_RowClassName="UOMRow" msprop:Generator_RowChangingName="UOMRowChanging" msprop:Generator_RowEvArgName="UOMRowChangeEvent" msprop:Generator_RowEvHandlerName="UOMRowChangeEventHandler" msprop:Generator_TablePropName="UOM" msprop:Generator_TableVarName="tableUOM" msprop:Generator_RowDeletingName="UOMRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="UOM" msprop:Generator_UserColumnName="UOM" msprop:Generator_ColumnPropNameInRow="UOM" msprop:Generator_ColumnVarNameInTable="columnUOM" msprop:Generator_ColumnPropNameInTable="UOMColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UOMDescription" msprop:Generator_UserColumnName="UOMDescription" msprop:Generator_ColumnPropNameInRow="UOMDescription" msprop:Generator_ColumnVarNameInTable="columnUOMDescription" msprop:Generator_ColumnPropNameInTable="UOMDescriptionColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BornOn" msprop:Generator_UserColumnName="BornOn" msprop:Generator_ColumnPropNameInRow="BornOn" msprop:Generator_ColumnVarNameInTable="columnBornOn" msprop:Generator_ColumnPropNameInTable="BornOnColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="UOMUID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="UOMUID" msprop:Generator_ColumnPropNameInRow="UOMUID" msprop:Generator_ColumnVarNameInTable="columnUOMUID" msprop:Generator_ColumnPropNameInTable="UOMUIDColumn" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:UOM" />
+      <xs:field xpath="mstns:UOMUID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsCustomerPackDTL" targetNamespace="http://tempuri.org/dsCustomerPackDTL.xsd" xmlns:mstns="http://tempuri.org/dsCustomerPackDTL.xsd" xmlns="http://tempuri.org/dsCustomerPackDTL.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection ConnectionStringObject="Data Source=ss1756;Initial Catalog=HotTrak;Integrated Security=True" IsAppSettingsProperty="false" Modifier="Assembly" Name="ss1756.HotTrak.dbo" ParameterPrefix="@" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsCustomerPackDTL" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="dsCustomerPackDTL" msprop:Generator_UserDSName="dsCustomerPackDTL" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="CustomerPackDTL" msprop:Generator_UserTableName="CustomerPackDTL" msprop:Generator_RowDeletedName="CustomerPackDTLRowDeleted" msprop:Generator_TableClassName="CustomerPackDTLDataTable" msprop:Generator_RowChangedName="CustomerPackDTLRowChanged" msprop:Generator_RowClassName="CustomerPackDTLRow" msprop:Generator_RowChangingName="CustomerPackDTLRowChanging" msprop:Generator_RowEvArgName="CustomerPackDTLRowChangeEvent" msprop:Generator_RowEvHandlerName="CustomerPackDTLRowChangeEventHandler" msprop:Generator_TablePropName="CustomerPackDTL" msprop:Generator_TableVarName="tableCustomerPackDTL" msprop:Generator_RowDeletingName="CustomerPackDTLRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CusDtlUID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="CusDtlUID" msprop:Generator_ColumnPropNameInRow="CusDtlUID" msprop:Generator_ColumnVarNameInTable="columnCusDtlUID" msprop:Generator_ColumnPropNameInTable="CusDtlUIDColumn" type="xs:int" />
+              <xs:element name="CustPackUID" msprop:Generator_UserColumnName="CustPackUID" msprop:Generator_ColumnPropNameInRow="CustPackUID" msprop:Generator_ColumnVarNameInTable="columnCustPackUID" msprop:Generator_ColumnPropNameInTable="CustPackUIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="ItemNoUID" msprop:Generator_UserColumnName="ItemNoUID" msprop:Generator_ColumnPropNameInRow="ItemNoUID" msprop:Generator_ColumnVarNameInTable="columnItemNoUID" msprop:Generator_ColumnPropNameInTable="ItemNoUIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Qty" msprop:Generator_UserColumnName="Qty" msprop:Generator_ColumnPropNameInRow="Qty" msprop:Generator_ColumnVarNameInTable="columnQty" msprop:Generator_ColumnPropNameInTable="QtyColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:CustomerPackDTL" />
+      <xs:field xpath="mstns:CusDtlUID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

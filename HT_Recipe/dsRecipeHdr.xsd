@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsRecipeHdr" targetNamespace="http://tempuri.org/dsRecipeHdr.xsd" xmlns:mstns="http://tempuri.org/dsRecipeHdr.xsd" xmlns="http://tempuri.org/dsRecipeHdr.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsRecipeHdr" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsRecipeHdr" msprop:Generator_DataSetName="dsRecipeHdr" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="RecipeHdr" msprop:Generator_UserTableName="RecipeHdr" msprop:Generator_RowDeletedName="RecipeHdrRowDeleted" msprop:Generator_RowChangedName="RecipeHdrRowChanged" msprop:Generator_RowClassName="RecipeHdrRow" msprop:Generator_RowChangingName="RecipeHdrRowChanging" msprop:Generator_RowEvArgName="RecipeHdrRowChangeEvent" msprop:Generator_RowEvHandlerName="RecipeHdrRowChangeEventHandler" msprop:Generator_TableClassName="RecipeHdrDataTable" msprop:Generator_TableVarName="tableRecipeHdr" msprop:Generator_RowDeletingName="RecipeHdrRowDeleting" msprop:Generator_TablePropName="RecipeHdr">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RecipeID" msprop:Generator_UserColumnName="RecipeID" msprop:Generator_ColumnVarNameInTable="columnRecipeID" msprop:Generator_ColumnPropNameInRow="RecipeID" msprop:Generator_ColumnPropNameInTable="RecipeIDColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RecipeName" msprop:Generator_UserColumnName="RecipeName" msprop:Generator_ColumnVarNameInTable="columnRecipeName" msprop:Generator_ColumnPropNameInRow="RecipeName" msprop:Generator_ColumnPropNameInTable="RecipeNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RecipeDesc" msprop:Generator_UserColumnName="RecipeDesc" msprop:Generator_ColumnVarNameInTable="columnRecipeDesc" msprop:Generator_ColumnPropNameInRow="RecipeDesc" msprop:Generator_ColumnPropNameInTable="RecipeDescColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MaxAmt" msprop:Generator_UserColumnName="MaxAmt" msprop:Generator_ColumnVarNameInTable="columnMaxAmt" msprop:Generator_ColumnPropNameInRow="MaxAmt" msprop:Generator_ColumnPropNameInTable="MaxAmtColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="UOMUID" msprop:Generator_UserColumnName="UOMUID" msprop:Generator_ColumnVarNameInTable="columnUOMUID" msprop:Generator_ColumnPropNameInRow="UOMUID" msprop:Generator_ColumnPropNameInTable="UOMUIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="RecipeChef" msprop:Generator_UserColumnName="RecipeChef" msprop:Generator_ColumnVarNameInTable="columnRecipeChef" msprop:Generator_ColumnPropNameInRow="RecipeChef" msprop:Generator_ColumnPropNameInTable="RecipeChefColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="75" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FinishedItemUID" msprop:Generator_UserColumnName="FinishedItemUID" msprop:Generator_ColumnVarNameInTable="columnFinishedItemUID" msprop:Generator_ColumnPropNameInRow="FinishedItemUID" msprop:Generator_ColumnPropNameInTable="FinishedItemUIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="BornOn" msprop:Generator_UserColumnName="BornOn" msprop:Generator_ColumnVarNameInTable="columnBornOn" msprop:Generator_ColumnPropNameInRow="BornOn" msprop:Generator_ColumnPropNameInTable="BornOnColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="MinAmt" msprop:Generator_UserColumnName="MinAmt" msprop:Generator_ColumnVarNameInTable="columnMinAmt" msprop:Generator_ColumnPropNameInRow="MinAmt" msprop:Generator_ColumnPropNameInTable="MinAmtColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="RecipeHdrUID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="RecipeHdrUID" msprop:Generator_ColumnVarNameInTable="columnRecipeHdrUID" msprop:Generator_ColumnPropNameInRow="RecipeHdrUID" msprop:Generator_ColumnPropNameInTable="RecipeHdrUIDColumn" type="xs:int" />
+              <xs:element name="ShelfLifeDays" msprop:Generator_UserColumnName="ShelfLifeDays" msprop:Generator_ColumnPropNameInRow="ShelfLifeDays" msprop:Generator_ColumnVarNameInTable="columnShelfLifeDays" msprop:Generator_ColumnPropNameInTable="ShelfLifeDaysColumn" type="xs:int" default="0" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:RecipeHdr" />
+      <xs:field xpath="mstns:RecipeHdrUID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

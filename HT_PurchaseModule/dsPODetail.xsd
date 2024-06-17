@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsPODetail" targetNamespace="http://tempuri.org/dsPODetail.xsd" xmlns:mstns="http://tempuri.org/dsPODetail.xsd" xmlns="http://tempuri.org/dsPODetail.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection ConnectionStringObject="Data Source=ss1756;Initial Catalog=HotTrak;Integrated Security=True" IsAppSettingsProperty="false" Modifier="Assembly" Name="ss1756.HotTrak.dbo" ParameterPrefix="@" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsPODetail" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="dsPODetail" msprop:Generator_UserDSName="dsPODetail" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="POdetail" msprop:Generator_UserTableName="POdetail" msprop:Generator_RowDeletedName="POdetailRowDeleted" msprop:Generator_TableClassName="POdetailDataTable" msprop:Generator_RowChangedName="POdetailRowChanged" msprop:Generator_RowClassName="POdetailRow" msprop:Generator_RowChangingName="POdetailRowChanging" msprop:Generator_RowEvArgName="POdetailRowChangeEvent" msprop:Generator_RowEvHandlerName="POdetailRowChangeEventHandler" msprop:Generator_TablePropName="POdetail" msprop:Generator_TableVarName="tablePOdetail" msprop:Generator_RowDeletingName="POdetailRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ItemUID" msprop:Generator_UserColumnName="ItemUID" msprop:Generator_ColumnPropNameInRow="ItemUID" msprop:Generator_ColumnVarNameInTable="columnItemUID" msprop:Generator_ColumnPropNameInTable="ItemUIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Qty" msprop:Generator_UserColumnName="Qty" msprop:Generator_ColumnPropNameInRow="Qty" msprop:Generator_ColumnVarNameInTable="columnQty" msprop:Generator_ColumnPropNameInTable="QtyColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Lotno" msprop:Generator_UserColumnName="Lotno" msprop:Generator_ColumnPropNameInRow="Lotno" msprop:Generator_ColumnVarNameInTable="columnLotno" msprop:Generator_ColumnPropNameInTable="LotnoColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="lstReceiveDte" msprop:Generator_UserColumnName="lstReceiveDte" msprop:Generator_ColumnPropNameInRow="lstReceiveDte" msprop:Generator_ColumnVarNameInTable="columnlstReceiveDte" msprop:Generator_ColumnPropNameInTable="lstReceiveDteColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ReceivedQty" msprop:Generator_UserColumnName="ReceivedQty" msprop:Generator_ColumnPropNameInRow="ReceivedQty" msprop:Generator_ColumnVarNameInTable="columnReceivedQty" msprop:Generator_ColumnPropNameInTable="ReceivedQtyColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="BornOn" msprop:Generator_UserColumnName="BornOn" msprop:Generator_ColumnPropNameInRow="BornOn" msprop:Generator_ColumnVarNameInTable="columnBornOn" msprop:Generator_ColumnPropNameInTable="BornOnColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="UserUID" msprop:Generator_UserColumnName="UserUID" msprop:Generator_ColumnPropNameInRow="UserUID" msprop:Generator_ColumnVarNameInTable="columnUserUID" msprop:Generator_ColumnPropNameInTable="UserUIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="POHeaderUID" msprop:Generator_UserColumnName="POHeaderUID" msprop:Generator_ColumnPropNameInRow="POHeaderUID" msprop:Generator_ColumnVarNameInTable="columnPOHeaderUID" msprop:Generator_ColumnPropNameInTable="POHeaderUIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Price" msprop:Generator_UserColumnName="Price" msprop:Generator_ColumnPropNameInRow="Price" msprop:Generator_ColumnVarNameInTable="columnPrice" msprop:Generator_ColumnPropNameInTable="PriceColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="POdetailUID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="POdetailUID" msprop:Generator_ColumnPropNameInRow="POdetailUID" msprop:Generator_ColumnVarNameInTable="columnPOdetailUID" msprop:Generator_ColumnPropNameInTable="POdetailUIDColumn" type="xs:int" />
+              <xs:element name="Itemno" msprop:Generator_UserColumnName="Itemno" msprop:Generator_ColumnPropNameInRow="Itemno" msprop:nullValue="_empty" msprop:Generator_ColumnVarNameInTable="columnItemno" msprop:Generator_ColumnPropNameInTable="ItemnoColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ItemDesc" msprop:Generator_UserColumnName="ItemDesc" msprop:nullValue="_empty" msprop:Generator_ColumnVarNameInTable="columnItemDesc" msprop:Generator_ColumnPropNameInTable="ItemDescColumn" msprop:Generator_ColumnPropNameInRow="ItemDesc" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:POdetail" />
+      <xs:field xpath="mstns:POdetailUID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

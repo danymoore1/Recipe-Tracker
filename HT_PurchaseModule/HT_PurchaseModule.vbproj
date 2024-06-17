@@ -1,0 +1,75 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <StartupObject>Sub Main</StartupObject>
+    <UseWindowsForms>true</UseWindowsForms>
+    <MyType>WindowsForms</MyType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="5.2.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HT_Business\HT_Business.vbproj" />
+    <ProjectReference Include="..\HT_Connection\HT_Connection.vbproj" />
+    <ProjectReference Include="..\HT_rptWriter\HT_rptWriter.vbproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="MTGCCombobox">
+      <HintPath>..\..\..\Downloads\MTGCCombobox.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="dsPODetail.Designer.vb">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>dsPODetail.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="dsPOHeader.Designer.vb">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>dsPOHeader.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="dsPoNotes.Designer.vb">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>dsPoNotes.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="My Project\Application.Designer.vb">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="dsPODetail.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPODetail.Designer.vb</LastGenOutput>
+    </None>
+    <None Update="dsPOHeader.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPOHeader.Designer.vb</LastGenOutput>
+    </None>
+    <None Update="dsPoNotes.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPoNotes.Designer.vb</LastGenOutput>
+    </None>
+    <None Update="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+</Project>

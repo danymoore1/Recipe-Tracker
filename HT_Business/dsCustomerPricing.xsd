@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsCustomerPricing" targetNamespace="http://tempuri.org/dsCustomerPricing.xsd" xmlns:mstns="http://tempuri.org/dsCustomerPricing.xsd" xmlns="http://tempuri.org/dsCustomerPricing.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection ConnectionStringObject="Data Source=ss1756;Initial Catalog=HotTrak;Integrated Security=True" IsAppSettingsProperty="false" Modifier="Assembly" Name="ss1756.HotTrak.dbo" ParameterPrefix="@" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsCustomerPricing" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="dsCustomerPricing" msprop:Generator_UserDSName="dsCustomerPricing" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="CustomerPricing" msprop:Generator_UserTableName="CustomerPricing" msprop:Generator_RowDeletedName="CustomerPricingRowDeleted" msprop:Generator_TableClassName="CustomerPricingDataTable" msprop:Generator_RowChangedName="CustomerPricingRowChanged" msprop:Generator_RowClassName="CustomerPricingRow" msprop:Generator_RowChangingName="CustomerPricingRowChanging" msprop:Generator_RowEvArgName="CustomerPricingRowChangeEvent" msprop:Generator_RowEvHandlerName="CustomerPricingRowChangeEventHandler" msprop:Generator_TablePropName="CustomerPricing" msprop:Generator_TableVarName="tableCustomerPricing" msprop:Generator_RowDeletingName="CustomerPricingRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CuspackUID" msprop:Generator_UserColumnName="CuspackUID" msprop:Generator_ColumnPropNameInRow="CuspackUID" msprop:Generator_ColumnVarNameInTable="columnCuspackUID" msprop:Generator_ColumnPropNameInTable="CuspackUIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="FrmDte" msprop:Generator_UserColumnName="FrmDte" msprop:Generator_ColumnPropNameInRow="FrmDte" msprop:Generator_ColumnVarNameInTable="columnFrmDte" msprop:Generator_ColumnPropNameInTable="FrmDteColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ToDte" msprop:Generator_UserColumnName="ToDte" msprop:Generator_ColumnPropNameInRow="ToDte" msprop:Generator_ColumnVarNameInTable="columnToDte" msprop:Generator_ColumnPropNameInTable="ToDteColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="TrayCost" msprop:Generator_UserColumnName="TrayCost" msprop:Generator_ColumnPropNameInRow="TrayCost" msprop:Generator_ColumnVarNameInTable="columnTrayCost" msprop:Generator_ColumnPropNameInTable="TrayCostColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CaseCost" msprop:Generator_UserColumnName="CaseCost" msprop:Generator_ColumnPropNameInRow="CaseCost" msprop:Generator_ColumnVarNameInTable="columnCaseCost" msprop:Generator_ColumnPropNameInTable="CaseCostColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CustPriceUID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="CustPriceUID" msprop:Generator_ColumnPropNameInRow="CustPriceUID" msprop:Generator_ColumnVarNameInTable="columnCustPriceUID" msprop:Generator_ColumnPropNameInTable="CustPriceUIDColumn" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:CustomerPricing" />
+      <xs:field xpath="mstns:CustPriceUID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

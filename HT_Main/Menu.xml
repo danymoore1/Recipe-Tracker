@@ -1,0 +1,31 @@
+﻿<root>
+  <TopLevelMenu id="&amp;File">
+    <MenuItem id = "&amp;Close" OnClick="_OnClose"/>
+  </TopLevelMenu>
+  <TopLevelMenu id="&amp;Maintenance">
+      <MenuItem id="Item Master" OnClick="_ItemMaster"/>
+      <MenuItem id="Recipe Master" OnClick="_RecipeMaster"/>
+      <MenuItem id="&amp;Terms Maintenance" OnClick="_TermsMaintenance"/>
+    <MenuItem id="&amp;Item Type" OnClick="_ItemType"/>
+    <MenuItem id="Customer Master" OnClick="_CustomerMaster"/>
+    <MeniItem id="Vendor Master" OnClick="_VendorMaster"/>
+    <MenuItem id="Customer Pricing" OnClick="_CustomerPricing"/>
+    <MenuItem id="Manage Customer Pack" OnClick="_CustomerPack"/>
+  </TopLevelMenu>
+  <TopLevelMenu id="&amp;Sales">
+    <MenuItem id="Order Entry" OnClick="_OrderEntry"/>
+    <MenuITem id="Shipping">
+    <MenuItem id="Ship Order" OnClick="_ShippingSales"/>
+    <MenuItem id="Auto Shipping" OnClick="_AutoShipping"/>
+      <MenuItem id="Create Customer Pack" OnClick="_CreateCustomerPack"/>
+    </MenuITem>
+    <MenuItem id="View Shop Travelers" OnClick="_ViewShopTravelers"/>
+    <menuItem id="Invoicing" OnClick="_Invoice"/>
+      </TopLevelMenu>
+  <TopLevelMenu id="&amp;Purchase Orders">
+    <MenuItem id="View/Edit/Add Purchase Order" OnClick="_PurchaseOrder"/>
+    <MenuItem id="Receive Purchase Order" OnClick="_ReceivePO"/>
+    <MenuItem id="Item Inventory" OnClick="_ItemMasterInventory"/>
+    <MenuItem id="Low Item Inventory" OnClick="_LowStockInventory"/>
+      </TopLevelMenu>
+</root>

@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsShopTrvlrHdr" targetNamespace="http://tempuri.org/dsShopTrvlrHdr.xsd" xmlns:mstns="http://tempuri.org/dsShopTrvlrHdr.xsd" xmlns="http://tempuri.org/dsShopTrvlrHdr.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection ConnectionStringObject="Data Source=ss1756;Initial Catalog=HotTrak;Integrated Security=True" IsAppSettingsProperty="false" Modifier="Assembly" Name="ss1756.HotTrak.dbo" ParameterPrefix="@" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsShopTrvlrHdr" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsShopTrvlrHdr" msprop:Generator_DataSetName="dsShopTrvlrHdr" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ShopTraveler" msprop:Generator_UserTableName="ShopTraveler" msprop:Generator_RowDeletedName="ShopTravelerRowDeleted" msprop:Generator_RowChangedName="ShopTravelerRowChanged" msprop:Generator_RowClassName="ShopTravelerRow" msprop:Generator_RowChangingName="ShopTravelerRowChanging" msprop:Generator_RowEvArgName="ShopTravelerRowChangeEvent" msprop:Generator_RowEvHandlerName="ShopTravelerRowChangeEventHandler" msprop:Generator_TableClassName="ShopTravelerDataTable" msprop:Generator_TableVarName="tableShopTraveler" msprop:Generator_RowDeletingName="ShopTravelerRowDeleting" msprop:Generator_TablePropName="ShopTraveler">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Travelernum" msprop:Generator_UserColumnName="Travelernum" msprop:Generator_ColumnPropNameInRow="Travelernum" msprop:Generator_ColumnVarNameInTable="columnTravelernum" msprop:Generator_ColumnPropNameInTable="TravelernumColumn" type="xs:int" />
+              <xs:element name="RecipeHdrUID" msprop:Generator_UserColumnName="RecipeHdrUID" msprop:Generator_ColumnPropNameInRow="RecipeHdrUID" msprop:Generator_ColumnVarNameInTable="columnRecipeHdrUID" msprop:Generator_ColumnPropNameInTable="RecipeHdrUIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Qty" msprop:Generator_UserColumnName="Qty" msprop:Generator_ColumnPropNameInRow="Qty" msprop:Generator_ColumnVarNameInTable="columnQty" msprop:Generator_ColumnPropNameInTable="QtyColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="RunDte" msprop:Generator_UserColumnName="RunDte" msprop:Generator_ColumnPropNameInRow="RunDte" msprop:Generator_ColumnVarNameInTable="columnRunDte" msprop:Generator_ColumnPropNameInTable="RunDteColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CompleteDte" msprop:Generator_UserColumnName="CompleteDte" msprop:Generator_ColumnPropNameInRow="CompleteDte" msprop:Generator_ColumnVarNameInTable="columnCompleteDte" msprop:Generator_ColumnPropNameInTable="CompleteDteColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CompletedQty" msprop:Generator_UserColumnName="CompletedQty" msprop:Generator_ColumnPropNameInRow="CompletedQty" msprop:Generator_ColumnVarNameInTable="columnCompletedQty" msprop:Generator_ColumnPropNameInTable="CompletedQtyColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="WasteQty" msprop:Generator_UserColumnName="WasteQty" msprop:Generator_ColumnPropNameInRow="WasteQty" msprop:Generator_ColumnVarNameInTable="columnWasteQty" msprop:Generator_ColumnPropNameInTable="WasteQtyColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="BornOn" msprop:Generator_UserColumnName="BornOn" msprop:Generator_ColumnPropNameInRow="BornOn" msprop:Generator_ColumnVarNameInTable="columnBornOn" msprop:Generator_ColumnPropNameInTable="BornOnColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="UserUID" msprop:Generator_UserColumnName="UserUID" msprop:Generator_ColumnPropNameInRow="UserUID" msprop:Generator_ColumnVarNameInTable="columnUserUID" msprop:Generator_ColumnPropNameInTable="UserUIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Printed" msprop:Generator_UserColumnName="Printed" msprop:Generator_ColumnPropNameInRow="Printed" msprop:Generator_ColumnVarNameInTable="columnPrinted" msprop:Generator_ColumnPropNameInTable="PrintedColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Lotno" msprop:Generator_UserColumnName="Lotno" msprop:Generator_ColumnPropNameInRow="Lotno" msprop:Generator_ColumnVarNameInTable="columnLotno" msprop:Generator_ColumnPropNameInTable="LotnoColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TravelerUID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="TravelerUID" msprop:Generator_ColumnPropNameInRow="TravelerUID" msprop:Generator_ColumnVarNameInTable="columnTravelerUID" msprop:Generator_ColumnPropNameInTable="TravelerUIDColumn" type="xs:int" />
+              <xs:element name="Complete" msprop:Generator_UserColumnName="Complete" msprop:Generator_ColumnVarNameInTable="columnComplete" msprop:Generator_ColumnPropNameInRow="Complete" msprop:Generator_ColumnPropNameInTable="CompleteColumn" type="xs:boolean" default="false" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ShopTravelerrpt" msprop:Generator_UserTableName="ShopTravelerrpt" msprop:Generator_RowDeletedName="ShopTravelerrptRowDeleted" msprop:Generator_TableClassName="ShopTravelerrptDataTable" msprop:Generator_RowChangedName="ShopTravelerrptRowChanged" msprop:Generator_RowClassName="ShopTravelerrptRow" msprop:Generator_RowChangingName="ShopTravelerrptRowChanging" msprop:Generator_RowEvArgName="ShopTravelerrptRowChangeEvent" msprop:Generator_RowEvHandlerName="ShopTravelerrptRowChangeEventHandler" msprop:Generator_TablePropName="ShopTravelerrpt" msprop:Generator_TableVarName="tableShopTravelerrpt" msprop:Generator_RowDeletingName="ShopTravelerrptRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ProductNo" msprop:Generator_UserColumnName="ProductNo" msprop:Generator_ColumnPropNameInRow="ProductNo" msprop:nullValue="_empty" msprop:Generator_ColumnVarNameInTable="columnProductNo" msprop:Generator_ColumnPropNameInTable="ProductNoColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ShopTravlrno" msprop:Generator_UserColumnName="ShopTravlrno" msprop:Generator_ColumnPropNameInRow="ShopTravlrno" msprop:nullValue="0" msprop:Generator_ColumnVarNameInTable="columnShopTravlrno" msprop:Generator_ColumnPropNameInTable="ShopTravlrnoColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="ShopTrvlrDate" msprop:Generator_UserColumnName="ShopTrvlrDate" msprop:Generator_ColumnPropNameInRow="ShopTrvlrDate" msprop:Generator_ColumnVarNameInTable="columnShopTrvlrDate" msprop:Generator_ColumnPropNameInTable="ShopTrvlrDateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="RecipeName" msprop:Generator_UserColumnName="RecipeName" msprop:Generator_ColumnPropNameInRow="RecipeName" msprop:nullValue="_empty" msprop:Generator_ColumnVarNameInTable="columnRecipeName" msprop:Generator_ColumnPropNameInTable="RecipeNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="StartDate" msprop:Generator_UserColumnName="StartDate" msprop:Generator_ColumnPropNameInRow="StartDate" msprop:Generator_ColumnVarNameInTable="columnStartDate" msprop:Generator_ColumnPropNameInTable="StartDateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="FinishDate" msprop:Generator_UserColumnName="FinishDate" msprop:Generator_ColumnPropNameInRow="FinishDate" msprop:Generator_ColumnVarNameInTable="columnFinishDate" msprop:Generator_ColumnPropNameInTable="FinishDateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ShopTrvlrQty" msprop:Generator_UserColumnName="ShopTrvlrQty" msprop:Generator_ColumnPropNameInRow="ShopTrvlrQty" msprop:nullValue="0" msprop:Generator_ColumnVarNameInTable="columnShopTrvlrQty" msprop:Generator_ColumnPropNameInTable="ShopTrvlrQtyColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="ItemNo" msprop:Generator_UserColumnName="ItemNo" msprop:Generator_ColumnPropNameInRow="ItemNo" msprop:nullValue="_empty" msprop:Generator_ColumnVarNameInTable="columnItemNo" msprop:Generator_ColumnPropNameInTable="ItemNoColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ItemDesc" msprop:Generator_UserColumnName="ItemDesc" msprop:Generator_ColumnPropNameInRow="ItemDesc" msprop:nullValue="_empty" msprop:Generator_ColumnVarNameInTable="columnItemDesc" msprop:Generator_ColumnPropNameInTable="ItemDescColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Qty" msprop:Generator_UserColumnName="Qty" msprop:Generator_ColumnPropNameInRow="Qty" msprop:nullValue="0" msprop:Generator_ColumnVarNameInTable="columnQty" msprop:Generator_ColumnPropNameInTable="QtyColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="UOM" msprop:Generator_UserColumnName="UOM" msprop:Generator_ColumnPropNameInRow="UOM" msprop:nullValue="_empty" msprop:Generator_ColumnVarNameInTable="columnUOM" msprop:Generator_ColumnPropNameInTable="UOMColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Lotno" msprop:Generator_UserColumnName="Lotno" msprop:Generator_ColumnPropNameInRow="Lotno" msprop:nullValue="_empty" msprop:Generator_ColumnVarNameInTable="columnLotno" msprop:Generator_ColumnPropNameInTable="LotnoColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ShopTraveler" />
+      <xs:field xpath="mstns:TravelerUID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

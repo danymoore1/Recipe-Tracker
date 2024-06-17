@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsTerms" targetNamespace="http://tempuri.org/dsTerms.xsd" xmlns:mstns="http://tempuri.org/dsTerms.xsd" xmlns="http://tempuri.org/dsTerms.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection ConnectionStringObject="Data Source=ss1756;Initial Catalog=HotTrak;Integrated Security=True" IsAppSettingsProperty="false" Modifier="Assembly" Name="ss1756.HotTrak.dbo" ParameterPrefix="@" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsTerms" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="dsTerms" msprop:Generator_UserDSName="dsTerms" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="NetTerms" msprop:Generator_UserTableName="NetTerms" msprop:Generator_RowDeletedName="NetTermsRowDeleted" msprop:Generator_TableClassName="NetTermsDataTable" msprop:Generator_RowChangedName="NetTermsRowChanged" msprop:Generator_RowClassName="NetTermsRow" msprop:Generator_RowChangingName="NetTermsRowChanging" msprop:Generator_RowEvArgName="NetTermsRowChangeEvent" msprop:Generator_RowEvHandlerName="NetTermsRowChangeEventHandler" msprop:Generator_TablePropName="NetTerms" msprop:Generator_TableVarName="tableNetTerms" msprop:Generator_RowDeletingName="NetTermsRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NetTermsUID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="NetTermsUID" msprop:Generator_ColumnPropNameInRow="NetTermsUID" msprop:Generator_ColumnVarNameInTable="columnNetTermsUID" msprop:Generator_ColumnPropNameInTable="NetTermsUIDColumn" type="xs:int" />
+              <xs:element name="NetTerms" msprop:Generator_UserColumnName="NetTerms" msprop:Generator_ColumnPropNameInRow="NetTerms" msprop:Generator_ColumnVarNameInTable="columnNetTerms" msprop:Generator_ColumnPropNameInTable="NetTermsColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NetTermsDesc" msprop:Generator_UserColumnName="NetTermsDesc" msprop:Generator_ColumnPropNameInRow="NetTermsDesc" msprop:Generator_ColumnVarNameInTable="columnNetTermsDesc" msprop:Generator_ColumnPropNameInTable="NetTermsDescColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ShipTerms" msprop:Generator_UserTableName="ShipTerms" msprop:Generator_RowDeletedName="ShipTermsRowDeleted" msprop:Generator_TableClassName="ShipTermsDataTable" msprop:Generator_RowChangedName="ShipTermsRowChanged" msprop:Generator_RowClassName="ShipTermsRow" msprop:Generator_RowChangingName="ShipTermsRowChanging" msprop:Generator_RowEvArgName="ShipTermsRowChangeEvent" msprop:Generator_RowEvHandlerName="ShipTermsRowChangeEventHandler" msprop:Generator_TablePropName="ShipTerms" msprop:Generator_TableVarName="tableShipTerms" msprop:Generator_RowDeletingName="ShipTermsRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ShipTermsUID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="ShipTermsUID" msprop:Generator_ColumnPropNameInRow="ShipTermsUID" msprop:Generator_ColumnVarNameInTable="columnShipTermsUID" msprop:Generator_ColumnPropNameInTable="ShipTermsUIDColumn" type="xs:int" />
+              <xs:element name="ShipTermDesc" msprop:Generator_UserColumnName="ShipTermDesc" msprop:Generator_ColumnPropNameInRow="ShipTermDesc" msprop:Generator_ColumnVarNameInTable="columnShipTermDesc" msprop:Generator_ColumnPropNameInTable="ShipTermDescColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ShipTerms" msprop:Generator_UserColumnName="ShipTerms" msprop:Generator_ColumnPropNameInRow="ShipTerms" msprop:Generator_ColumnVarNameInTable="columnShipTerms" msprop:Generator_ColumnPropNameInTable="ShipTermsColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:NetTerms" />
+      <xs:field xpath="mstns:NetTermsUID" />
+    </xs:unique>
+    <xs:unique name="ShipTerms_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ShipTerms" />
+      <xs:field xpath="mstns:ShipTermsUID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
