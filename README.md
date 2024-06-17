@@ -4,3 +4,5 @@ There is a program within called Shop Travel that carries the recipe from the be
 It does not contain an accounting package.  
 
 This solution contains 9 programs that all need each other to run the system.
+
+HotTrak.bak is the SQL Database
